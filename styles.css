@@ -114,3 +114,113 @@ header nav .activites:focus{
 }
 
 
+
+
+
+
+
+
+
+
+                    /* main : le corp de la page*/
+
+
+
+/*barre de recherche*/
+
+main article{
+    padding: 0px 20px;
+}
+
+
+
+
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    padding: 30px 0px;
+}
+  
+.searchTerm {
+    width: 380px;
+    border: 1px solid #F2F2F2;
+    border-left: none;
+    padding: 0px 0px 0px 10px;
+    height: 50px;
+    border-radius: 0;
+    font-size: 20px;
+    
+}
+  
+.searchTerm:focus{
+    color: #DEEBFF;
+}
+  
+.searchButton {
+    width: 50px;
+    height: 50px;
+    
+    border: 1px solid #0065FC;
+    background: #0065FC;
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+    
+    font-size: 20px;
+}
+.positionButton {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #F2F2F2;
+    background: #F2F2F2;
+    text-align: center;
+    color: black;
+    border-radius: 15px 0 0 15px;
+    cursor: pointer;
+    font-size: 15px;
+}
+  
+  /*les filtres de recherche*/
+
+.circle-icon {
+    color: #0065FC;
+    background: #DEEBFF;
+    padding: 10px;
+    border-radius: 100%;
+    height: 100%;
+}
+
+
+.filtres{
+    border: 2px #F2F2F2 solid;
+    border-left: none;
+    border-radius: 40px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+}
+
+
+.nav_filtres{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin: 10px 0px 20px 0px;     
+}
+
+
+nav li{
+    margin-bottom: 10px;
+}
+
+span{
+    padding: 5px 10px 5px 5px;
+    font-weight:bold;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+ 
