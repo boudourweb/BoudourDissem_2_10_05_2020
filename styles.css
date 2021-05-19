@@ -260,4 +260,54 @@ span{
     padding-top: 5px;
 }
 
-       
+        /*Hébergements à Marseille*/
+
+.hebergements_a_marseille{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.titre_hebergements_a_marseille{
+    margin-bottom: 20px;
+}
+
+.element_hebergements_a_marseille{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 10px #F2F2F2;
+    margin: 10px 0px 10px 0px;                              
+}
+
+
+.photo_element_hebergements_a_marseille{
+    border-radius: 20px 20px 0px 0px;
+    border: 5px white solid;
+}
+
+img{
+    max-height: 150px;
+}
+
+.description_hebergements_a_marseille{
+    border-radius: 0px 0px 20px 20px;
+    border: 5px white solid;
+    background: white;
+    padding: 0px 0px 5px 15px;
+}
+
+.afficher_plus{
+    margin: 40px 0px 0px 0px
+}
+
+
+.fa, .fas{
+    font-weight: 900;
+    font-size: 10px;
+}
+
+
+
+  
