@@ -732,7 +732,8 @@ main .nav_filtres{
 .element_activites_a_marseille{
     min-height: 200px;
     border-radius: 30px;
-    margin: 0px 0px 30px 0px;  
+    margin: 0px 0px 30px 0px;
+    height: 200px; 
 }
 .photo_element_activites_a_marseille {
     border-radius: 25px 25px 25px 25px;
