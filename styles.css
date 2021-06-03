@@ -1,12 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
-}
-
-
 /*@media screen and (min-width: 576px) and (max-width: 768px){
 }*/
 
@@ -20,22 +11,25 @@
     src: url('police/Raleway-Bold.ttf') format('truetype');
 }
 
-
-
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
 body{
     font-family: 'raleway', sans-serif;
-    }
+}
 
 h1{
     font-size: 34px;
-    font-family: 'Raleway Bold';
-    margin: 20px 0px 30px 0px;
+    font-family: 'Raleway Bold';   
 }
 
 h2{
     font-size: 32px;
     font-family: 'Raleway Bold';
-    margin: 20px 0px 30px 0px;
 }
 
 h3{
@@ -44,14 +38,8 @@ h3{
 }
 
 h4{
-    font-family: 'Raleway Bold';
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-main p{
-    font-size: 22px;
-    padding-bottom: 4px;
+    font-size: 18px;
+    font-family: 'Raleway Bold'; 
 }
 
 
@@ -64,7 +52,7 @@ main p{
     width: 150px;
     height: auto;
     padding: 0px 0px 15px 10px;
-    }
+}
 
 #logo img{
     width: 100%;
@@ -72,13 +60,10 @@ main p{
     object-fit: contain;
 }
 
-
-
 header ul{
     display: flex;
     flex-wrap: wrap;
     font-size: 24px;
-    
 }
 
 header li{
@@ -93,7 +78,6 @@ header li{
 }    
 
 #sinscrire {
-    
     font-family: 'Raleway Bold';
     font-size: 22px;
     width: calc(100% - 150px);
@@ -102,7 +86,6 @@ header li{
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-end;
-
 }
 
 .hebergements,
@@ -119,11 +102,10 @@ header li{
 header nav .hebergements:hover,
 header nav .activites:hover {
 	border-bottom: 3px solid #0065FC;
-	
 }
 
-header nav .hebergements:hover a,
-header nav .activites:hover a {
+header nav .hebergements a:hover,
+header nav .activites a:hover{
     color: #0065FC;
 }
 header nav .hebergements:focus,
@@ -144,13 +126,17 @@ header nav .activites:focus{
 
 /*barre de recherche----search bar*/
 
-
+main p{
+    font-size: 22px;
+    padding-bottom: 4px;
+}
 main article{
     padding: 0px 40px;
 }
 
 article h1{
     margin-bottom: 30px;
+    margin: 20px 0px 30px 0px;
 }
 
 .search {
@@ -215,15 +201,19 @@ article h1{
     display: flex;
     align-items: center;
     margin: 10px 0px;
+    cursor: pointer;
 }
 
 .filtres:hover{
     box-shadow: 0px 0px 10px #0065FC;
+    
 }
 
 .filtres:focus{
-    box-shadow: 0px 0px 10px #0065FC;
-    background: grey;
+    box-shadow: 0px 0px 10px #0065FC;   
+}
+.filtres:active{
+    transform: translate(1px, 1px);
 }
 
 main .li{
@@ -232,7 +222,6 @@ main .li{
 }
   
 .circle-icon {
-     
     color: #0065FC;
     font-size: 30px;
     background: #DEEBFF;
@@ -242,14 +231,13 @@ main .li{
     position: absolute;
     top: -4px;
     left: -4px;
-
-    transition: all 1s;
     }
-.circle-icon:active, 
+.circle-icon:focus, 
 .circle-icon:hover{
     box-shadow: 0px 0px 10px #0065FC;
-
-    transform: translate(240px, 0px);
+}
+.circle-icon:active{
+    transform: translate(1px, 1px);
 }
   
 main .fa, 
@@ -258,9 +246,6 @@ main .fas{
     justify-content: center;
     align-items: center;   
 }
-
-
-
 
 main .nav_filtres{
     display: flex;
@@ -303,6 +288,9 @@ aside{
 
         /*--------------les plus populaires-------------*/
 
+section h2{
+    margin: 20px 0px 30px 0px;
+}
 .les_plus_populaires{
     background-color: #F2F2F2;
     margin: 30px 0px 30px 0px;
@@ -333,6 +321,10 @@ aside{
     height: 220px;
     width: 100%;
     position: relative;
+}
+.element_les_plus_populaires:hover{
+    transform: translate(1px, -2px);
+    box-shadow: 0px 0px 10px #0065FC;
 }
  
 .photo_element_les_plus_populaires{
@@ -380,7 +372,6 @@ aside{
 
 #titre_hebergements_a_marseille{
     width: 100%;
-    
 }
 
 .element_hebergements_a_marseille{
@@ -390,9 +381,12 @@ aside{
     border: 7px solid white;
     background: white;
     margin: 15px 0px;
-    box-shadow: 0px 0px 10px grey;
-        
-}                           
+    box-shadow: 0px 0px 10px grey;        
+} 
+.element_hebergements_a_marseille:hover{
+    transform: translate(1px, -2px);
+    box-shadow: 0px 0px 10px #0065FC; 
+}                         
 
 .photo_element_hebergements_a_marseille{
     border-radius: 30px 30px 0px 0px;
@@ -442,8 +436,6 @@ aside{
     justify-content: center;
 }
 
-
-
 .element_activites_a_marseille{
     display: block;
     width: 100%;
@@ -451,9 +443,13 @@ aside{
     border-radius: 35px;
     box-shadow: 0px 0px 10px grey;
     margin: 0px 0px 15px 0px;
-    position: relative;
-    
+    position: relative;    
 }
+
+.element_activites_a_marseille:hover{
+    transform: translate(1px, -2px);
+    box-shadow: 0px 0px 10px #0065FC; 
+}  
 
 .photo_element_activites_a_marseille{
     border-radius: 35px 35px 35px 35px;
@@ -478,36 +474,40 @@ aside{
     display: flex;
     flex-direction: column;
     margin: 15px 0px 0px 0px;
-    
-    
 }
 
 .small_element_activites .element_activites_a_marseille{
     width: 100%;
-    
     margin: 0px 0px 30px 0px;
 }
+.small_element_activites .element_activites_a_marseille:hover{
+    transform: translate(1px, -2px);
+    box-shadow: 0px 0px 10px #0065FC; 
+} 
+
 
             /*--------- Pied de la page Footer -----------*/
 
             
 Footer{
     background-color: #F2F2F2;
-    padding: 70px 0px 0px 30px;
-    
+    padding: 70px 0px 0px 50px;
 }
+
 #bloc_footer{
     display: flex;
     justify-content: center;
     flex-direction: column;
-
-    
 }
 
 
 footer li{
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 16px;
+}
+
+footer h4{
+    margin-bottom: 20px;
 }
 
 .a_propos{
@@ -529,10 +529,6 @@ footer a{
 }
 
 /* on va travailler sur le responsive*/
-
- 
-
-
 
 
  @media screen and (max-width: 576px){
@@ -639,9 +635,8 @@ main .nav_filtres{
     min-width: 25px;
 }
 
+
 /*les résultats de recherche*/
-
-
 
         /*--------------les plus populaires-------------*/
 
@@ -666,7 +661,6 @@ main .nav_filtres{
     padding: 10px 10px 10px 10px;
     min-width: 60%;
     border-radius: 0px 25px 25px 0px;
-   
 }
 
 .all_stars{
@@ -680,20 +674,16 @@ main .nav_filtres{
     padding-top: 0.9rem;
 }
 
-
-
         /*--------------Hébergements à Marseille----------------*/
 
 .hebergements_a_marseille {
     padding: 10px 20px 20px 20px;
 }
 
-
 .element_hebergements_a_marseille {
     border-radius: 30px;
     margin: 15px 0px;
     height: 250px;
-
 }
 .photo_element_hebergements_a_marseille {
     border-radius: 25px 25px 0px 0px;
@@ -778,10 +768,7 @@ footer li {
 
 
 
-
 @media screen and (min-width: 768px) and (max-width: 992px){
-
-
 
     h1{
         font-size: 16px;
@@ -789,7 +776,7 @@ footer li {
     
     h2{
         font-size: 20px;
-        margin: 30px 0px 15px 0px;;
+        margin: 30px 0px 15px 0px;
     }
     
     h3{
@@ -853,14 +840,12 @@ footer li {
         .activites, .hebergements{
             margin: 0px 0px 0px 0px;
             border-top: 3px solid #F2F2F2;
-            
         }
     
         header nav .hebergements:hover,
         header nav .activites:hover {
             border-bottom: none;
             border-top: 3px solid #0065FC;
-            
         }
     
         header nav .hebergements:hover a,
@@ -914,8 +899,7 @@ footer li {
             display: block;
             font-family: 'Raleway Bold';
             font-size: 12px;
-            
-        }
+            }
         
      /*-----les filtres de recherche-----*/
         .circle-icon {
@@ -925,22 +909,19 @@ footer li {
             position: absolute;
             top: -3px;
             left: -2px;
-            transition: none ;
         }
     
         .circle-icon:active, .circle-icon:hover{
-            box-shadow: 0px 0px 10px #0065FC;
-    
-            transform: none;
+            box-shadow: 0px 0px 10px #0065FC;  
         }
-    
-          
+      
         .filtres {
             width: auto;
             height: 38px;
             border: 3px #F2F2F2 solid;
             margin: 5px 5px 5px 20px;
         }   
+        
         main .nav_filtres{
             margin: 10px 0px 16px 10px;
             display: flex;
@@ -952,6 +933,7 @@ footer li {
             flex-direction: row;
             align-items: baseline;
         }
+        
         .bloc_filtres span {
             padding: 0px 20px 0px 40px;
             font-size: 13px;
@@ -964,25 +946,27 @@ footer li {
             min-width: 20px;
             margin-right: 8px;
         }
-                /*------les résultats de recherche---*/
+              
+        
+        /*------les résultats de recherche---*/
     
-            /*-----------Hébergements à Marseille--&--les plus populaires-------------*/
-                           /*-----------Section 1--&--Section 2----------*/
+        /*-----------Hébergements à Marseille--&--les plus populaires-------------*/
+                         /*-----------Section 1--&--Section 2----------*/
     
         #populairesEThebergements{
             width: 100%;
             display: flex;
             flex-direction: row-reverse;
             padding: 0px 30px;
-            margin: 30px 0px 10px 0px;
-            
+            margin: 30px 0px 10px 0px;    
         }
+
         #les_plus_populaires{
             margin: 0px 0px 0px 15px;
             width: 50%;
         }
+
         .les_plus_populaires{
-            
             padding: 0px 30px 0px 30px;;
             border-radius: 15px;
             margin: 0px 0px 0px 0px;
@@ -1035,9 +1019,7 @@ footer li {
             justify-content: space-between;
             width: 100%;
         }
-            
-        
-        
+         
         #titre_hebergements_a_marseille{
             margin: 0px 0px 0px 15px;
             width: 100%;
@@ -1096,8 +1078,6 @@ footer li {
             padding-left: 30px;
         }
         
-          
-        
         .bloc_element_activites_a_marseille{
             padding: 0px 15px 0px 15px;
             margin: 0px 0px 50px 0px;
@@ -1105,7 +1085,6 @@ footer li {
             display: flex;
             flex-wrap: nowrap;
         }
-        
         
         .element_activites_a_marseille{
             display: block;
@@ -1140,8 +1119,8 @@ footer li {
             margin: 0px 15px 0px 15px;
             border-radius: 15px;
             justify-content: space-between;
-            /* flex-direction: inherit;   par hazard*/    
         }
+
         .small_element_activites .element_activites_a_marseille{
             border-radius: 15px;
             box-shadow: 0px 0px 10px gray;
@@ -1202,7 +1181,7 @@ footer li {
     
     h2{
         font-size: 20px;
-        margin: 30px 0px 15px 0px;;
+        
     }
     
     h3{
@@ -1213,12 +1192,9 @@ footer li {
     h4{
         font-family: 'Raleway Bold';
         font-size: 24px;
-        margin-bottom: 20px;
+        
     }
     
-    main h1{
-        margin: 16px 0px 5px 0px;
-    }
     main p{
         font-size: 12px;
     }
@@ -1276,8 +1252,8 @@ footer li {
 	    
     }
 
-    header nav .hebergements:hover a,
-    header nav .activites:hover a {
+    header nav .hebergements a:hover,
+    header nav .activites a:hover {
         color: #0065FC;
     }
 
@@ -1320,17 +1296,17 @@ footer li {
     .searchButton{
         min-width: 100px;
         height: 40px;
-        border-radius: 0px 10px 10px 0px;
-        
+        border-radius: 0px 10px 10px 0px;    
     }
+
     .searchButton span{
         display: block;
         font-family: 'Raleway Bold';
         font-size: 12px;
-        
     }
     
  /*-----les filtres de recherche-----*/
+
     .circle-icon {
         font-size: 14px;
         height: 37px;
@@ -1342,8 +1318,7 @@ footer li {
 
     .circle-icon:active, .circle-icon:hover{
         box-shadow: 0px 0px 10px #0065FC;
-
-        transform: none;
+        
     }
 
       
