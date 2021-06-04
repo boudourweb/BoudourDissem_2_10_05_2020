@@ -1,6 +1,8 @@
 /*@media screen and (min-width: 576px) and (max-width: 768px){
 }*/
 
+/*------------ Small devices------------*/
+
 @font-face{
     font-family: 'Raleway';
     src: url('police/Raleway-Regular.ttf') format('truetype');
@@ -104,8 +106,8 @@ header nav .activites:hover {
 	border-bottom: 3px solid #0065FC;
 }
 
-header nav .hebergements a:hover,
-header nav .activites a:hover{
+header nav .hebergements:hover a,
+header nav .activites:hover a{
     color: #0065FC;
 }
 header nav .hebergements:focus,
@@ -530,6 +532,7 @@ footer a{
 
 /* on va travailler sur le responsive*/
 
+/*------------ X-Small devices------------*/
 
  @media screen and (max-width: 576px){
 
@@ -766,7 +769,7 @@ footer li {
 }
 
 
-
+/*---------------Medium device--------------*/
 
 @media screen and (min-width: 768px) and (max-width: 992px){
 
@@ -1171,7 +1174,7 @@ footer li {
  }  
 
 
-
+/*------------Large devices------------*/
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
     
@@ -1583,7 +1586,8 @@ footer li {
   
 
 
-
+/*------------ X-Large devices------------*/
+/*------------ XX-Large devices------------*/
 
 @media screen and (min-width: 1200px) {
 
