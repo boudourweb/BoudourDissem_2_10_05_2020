@@ -98,9 +98,6 @@ header li{
     margin: 20px 0px 0px 0px;
   
 }
-
-
-
 header nav .hebergements:hover,
 header nav .activites:hover {
 	border-bottom: 3px solid #0065FC;
@@ -132,11 +129,11 @@ main p{
     font-size: 22px;
     padding-bottom: 4px;
 }
-main article{
-    padding: 0px 40px;
+.header_main{
+    padding: 0px 30px;
 }
 
-article h1{
+.header_main h1{
     margin-bottom: 30px;
     margin: 20px 0px 30px 0px;
 }
@@ -193,6 +190,17 @@ article h1{
   
   /*les filtres de recherche*/
 
+
+
+main .nav_filtres{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0px 20px 0px;     
+}
+
+main .nav .li{
+    margin: 10px 10px;
+}
 .filtres{
     
     width: auto;
@@ -202,7 +210,7 @@ article h1{
     position: relative;
     display: flex;
     align-items: center;
-    margin: 10px 0px;
+    margin: 10px 10px;
     cursor: pointer;
 }
 
@@ -248,18 +256,6 @@ main .fas{
     justify-content: center;
     align-items: center;   
 }
-
-main .nav_filtres{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 10px 0px 20px 0px;     
-}
-
-main .nav .li{
-    margin: 10px 10px;
-}
-
 .bloc_filtres span{
     padding: 0px 20px 0px 80px;
     font-size: 22px;
@@ -285,8 +281,6 @@ aside{
     margin-right: 10px;
 }
  /*les résultats de recherche*/
-
-
 
         /*--------------les plus populaires-------------*/
 
@@ -352,12 +346,12 @@ section h2{
 
 .blue-star{
     color: #0065FC;
-    padding-top: 15px;
+    
 }
 
 .grey-star{
     color: #F2F2F2;
-    padding-top: 15px;
+    
 }
 
         /*--------------Hébergements à Marseille----------------*/
@@ -383,7 +377,8 @@ section h2{
     border: 7px solid white;
     background: white;
     margin: 15px 0px;
-    box-shadow: 0px 0px 10px grey;        
+    box-shadow: 0px 0px 10px grey; 
+    position:relative;       
 } 
 .element_hebergements_a_marseille:hover{
     transform: translate(1px, -2px);
@@ -407,6 +402,8 @@ section h2{
 .all_stars_hebergements{
     display: flex;
     font-size: 18px;
+    position: absolute;
+    bottom: 19px;
 }
 
 .afficher_plus{
@@ -584,9 +581,11 @@ footer a{
 
 
 /*barre de recherche----search bar*/
+#bloc_page{
+    min-width: 300px;
+}
 
-
-main article{
+.header_main{
     padding: 0px 20px;
 }
 
@@ -617,7 +616,7 @@ main article{
  /*les filtres de recherche*/
 
  .filtres{
-    margin: 5px 0px;
+    margin: 5px 5px;
     height: 50px;
  }
  .circle-icon {
@@ -668,14 +667,9 @@ main .nav_filtres{
 
 .all_stars{
     font-size: 0.7rem;
-    bottom: 5px;
+    bottom: 10px;
 }
-.blue-star{
-    padding-top: 0.9rem;
-}
-.grey-star{
-    padding-top: 0.9rem;
-}
+
 
         /*--------------Hébergements à Marseille----------------*/
 
@@ -696,16 +690,10 @@ main .nav_filtres{
     padding: 7px 0px 0px 10px;
 }
 .all_stars_hebergements {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
+    bottom: 10px;
 }
-.hebergements_a_marseille .blue-star{
-    padding-top: 0rem;
-    padding-bottom: 0.5rem;
-}
-.hebergements_a_marseille .grey-star{
-    padding-top: 0rem;
-    padding-bottom: 0.5rem;
-}
+
 .photo_element_hebergements_a_marseille {
     border-radius: 25px 25px 0px 0px;
 }
@@ -870,7 +858,7 @@ footer li {
           /*barre de recherche----search bar*/
     
     
-        main article {
+        .header_main{
             padding-left: 30px;
             }
         .search {
@@ -901,6 +889,7 @@ footer li {
         .searchButton span{
             display: block;
             font-family: 'Raleway Bold';
+            color: white;
             font-size: 12px;
             }
         
@@ -965,8 +954,8 @@ footer li {
         }
 
         #les_plus_populaires{
-            margin: 0px 0px 0px 15px;
-            width: 50%;
+            margin: 0px 10px 0px 15px;
+            width: 35%;
         }
 
         .les_plus_populaires{
@@ -987,6 +976,7 @@ footer li {
             font-size: 20px;
             display: flex;
             align-items: baseline;
+            
         }
         .element_les_plus_populaires{
             height: 130px;
@@ -997,20 +987,20 @@ footer li {
         }
         .photo_element_les_plus_populaires{
             border-radius: 10px 0px 0px 10px;
-            width: 50%;
+            min-width: 45%;
         }
         .description_les_plus_populaires{
-            padding: 10px 10px 10px 20px;
+            padding: 10px 10px 10px 10px;
             width: 70%;
         }     
         .all_stars{
             font-size: 8px;
             position: absolute;
-            bottom: 10px;
+            bottom: 5px;
         }
     
         #hebergements_a_marseille{
-            width: 100%;
+            width: 65%;
             margin: 0px 30px 0px 0px;
         }
         .hebergements_a_marseille{
@@ -1028,14 +1018,15 @@ footer li {
             width: 100%;
            }
     
-        .element_hebergements_a_marseille{
+           .element_hebergements_a_marseille {
             height: 180px;
-            width: 40%;
+            width: 44%;
             border-radius: 15px;
             border: 5px solid white;
             margin: 0px 10px 25px 10px;
             box-shadow: 0px 0px 10px grey;
         }
+     
         
         .photo_element_hebergements_a_marseille{
             border-radius: 10px 10px 0px 0px;
@@ -1054,10 +1045,9 @@ footer li {
         .all_stars_hebergements{
             display: flex;
             font-size: 8px;
+            bottom: 5px;
         }
-        .blue-star {
-            padding-top: 0px;
-        }
+        
         
         .afficher_plus{
             width: 100%;
@@ -1274,7 +1264,7 @@ footer li {
       /*barre de recherche----search bar*/
 
 
-    main article {
+    .header_main {
         padding-left: 30px;
         }
     .search {
@@ -1306,6 +1296,7 @@ footer li {
         display: block;
         font-family: 'Raleway Bold';
         font-size: 12px;
+        color: white;
     }
     
  /*-----les filtres de recherche-----*/
@@ -1369,7 +1360,7 @@ footer li {
     }
     #les_plus_populaires{
         margin: 0px 0px 0px 15px;
-        width: 50%;
+        width: 35%;
     }
     .les_plus_populaires{
         
@@ -1413,7 +1404,7 @@ footer li {
     }
 
     #hebergements_a_marseille{
-        width: 100%;
+        width: 65%;
         margin: 0px 30px 0px 0px;
     }
     .hebergements_a_marseille{
@@ -1421,12 +1412,9 @@ footer li {
         border-radius: 15px;
         padding: 0px 30px 35px 30px;
         margin: 0px 0px 0px 0px;
-        
         justify-content: space-between;
         width: 100%;
     }
-        
-    
     
     #titre_hebergements_a_marseille{
         margin: 0px 0px 0px 15px;
@@ -1435,22 +1423,14 @@ footer li {
 
     .element_hebergements_a_marseille{
         height: 180px;
-        width: 30%;
+        width: 46%;
         border-radius: 15px;
         border: 5px solid white;
         margin: 0px 10px 25px 10px;
         box-shadow: 0px 0px 10px grey;
     }
-    @media screen and (min-width: 992px) and (max-width: 1070px){
-        .element_hebergements_a_marseille {
-            height: 180px;
-            width: 45%;
-            border-radius: 15px;
-            border: 5px solid white;
-            margin: 0px 10px 25px 10px;
-            box-shadow: 0px 0px 10px grey;
-        }
-     }
+  
+     
     .photo_element_hebergements_a_marseille{
         border-radius: 10px 10px 0px 0px;
         height: 60%;
@@ -1468,10 +1448,9 @@ footer li {
     .all_stars_hebergements{
         display: flex;
         font-size: 8px;
+        bottom: 10px;
     }
-    .blue-star {
-        padding-top: 0px;
-    }
+   
     
     .afficher_plus{
         width: 100%;
@@ -1539,7 +1518,7 @@ footer li {
         margin: 0px 15px 0px 15px;
         border-radius: 15px;
         justify-content: space-between;
-        /* flex-direction: inherit;   par hazard*/    
+         
     }
     .small_element_activites .element_activites_a_marseille{
         border-radius: 15px;
@@ -1692,7 +1671,7 @@ footer li {
       /*barre de recherche----search bar*/
 
 
-    main article {
+    .header_main {
         padding-left: 30px;
         }
     .search {
@@ -1724,7 +1703,7 @@ footer li {
         display: block;
         font-family: 'Raleway Bold';
         font-size: 12px;
-        
+        color: white;
     }
     
  /*-----les filtres de recherche-----*/
@@ -1788,7 +1767,7 @@ footer li {
     }
     #les_plus_populaires{
         margin: 0px 0px 0px 15px;
-        width: 50%;
+        width: 35%;
     }
     .les_plus_populaires{
         
@@ -1832,7 +1811,7 @@ footer li {
     }
 
     #hebergements_a_marseille{
-        width: 100%;
+        width: 65%;
         margin: 0px 30px 0px 0px;
     }
     .hebergements_a_marseille{
@@ -1844,8 +1823,7 @@ footer li {
         justify-content: space-between;
         width: 100%;
     }
-        
-    
+   
     
     #titre_hebergements_a_marseille{
         margin: 0px 0px 0px 15px;
@@ -1878,10 +1856,9 @@ footer li {
     .all_stars_hebergements{
         display: flex;
         font-size: 8px;
+        bottom: 10px;
     }
-    .blue-star {
-        padding-top: 0px;
-    }
+    
     
     .afficher_plus{
         width: 100%;
@@ -1902,7 +1879,7 @@ footer li {
     #titre_activites_a_marseille{
         margin-bottom: 0px;
         width: 100%;
-        margin-left: 60px;
+        padding: 0px 0px 0px 30px;
     }
     
       
