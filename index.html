@@ -4,28 +4,22 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Reservia</title>
-
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--pour s'adapter au smartphone-->
 </head>
 <body>
     <div id="bloc_page">
-                             
         <header>                                            <!--l'entête de la page--> 
             <nav>    
                 <ul>
                     <li id="logo">
                         <img src="img/images/logo/Reservia@3x.png" alt="logo">
                     </li>
-                    
                     <li id="sinscrire" >
                         <a href="">S'inscrire</a>
                     </li>
-                    
                     <li class="hebergements">
                         <a href="#titre_hebergements_a_marseille">Hébergements</a>
                     </li>
-                    
                     <li class="activites">
                         <a href="#titre_activites_a_marseille">Activités</a>
                     </li>
@@ -38,53 +32,59 @@
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
                 </div>
-                 <div class="search">                        <!--  search bar  -->
-                    <button type="submit" class="positionButton"><i class="fas fa-map-marker-alt"></i>
+                <div class="search">                        <!--  search bar  -->
+                    <button type="button" class="positionButton">
+                        <i class="fas fa-map-marker-alt"></i>
                     </button>
                     <input type="text" class="searchTerm" placeholder="Marseille, France">
-                    <button type="submit" class="searchButton"><i class="fa fa-search"></i><span>Rechercher</span>
+                    <button type="button" class="searchButton">
+                        <i class="fa fa-search"></i>
+                        <span>Rechercher</span>
                     </button>
                 </div>
-
                 <div class="bloc_filtres">                  <!--les filtres de recherche -->
-
                     <h3>Filtres</h3>             
                     <NAV >    
                         <ul class="nav_filtres">
                             <li>
                                 <div class="filtres" >
-                                <i class="fas fa-money-bill-wave circle-icon"> </i> <span>Economique</span> 
+                                <i class="fas fa-money-bill-wave circle-icon"></i>
+                                <span>Economique</span> 
                                 </div>
                             </li>
                             <li>
                                 <div class="filtres">
-                                <i class="fas fa-male circle-icon"> </i> <span>Familial</span>
+                                <i class="fas fa-male circle-icon"></i>
+                                <span>Familial</span>
                                 </div>
                             </li>
                             <li>
                                 <div class="filtres">
-                                <i class="fas fa-heart circle-icon"> </i> <span>Romantique</span>
+                                <i class="fas fa-heart circle-icon"></i>
+                                <span>Romantique</span>
                                 </div>
                             </li>
                             <li>
                                 <div class="filtres">
-                                <i class="fas fa-dog circle-icon"> </i> <span>Animaux autorisés</span>
+                                <i class="fas fa-dog circle-icon"></i>
+                                <span>Animaux autorisés</span>
                                 </div>
                             </li>
                         </ul>
                     </NAV>
                 </div> 
-                <aside>
+                <div class="nombre_logement"> 
                     <i class="fas fa-info circle-info"></i>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
-                </aside>
+                </div>
             </div>
-                                      
             <div id="populairesEThebergements">
                 <section id="les_plus_populaires">                  <!-- Section 1  les résultats de recherche -->
                    <div class="les_plus_populaires">
                         <div class= "les_plus_populaires_arrow">
-                            <div id="titre_Les_plus_populaires"><h2>Les plus populaires</h2></div>
+                            <div id="titre_Les_plus_populaires">
+                                <h2>Les plus populaires</h2>
+                            </div>
                             <i class="fas fa-chart-line"></i>
                         </div>    
                         <a href="" class="element_les_plus_populaires">
@@ -102,7 +102,6 @@
                             </div>
                         </a> 
                         <a href="" class="element_les_plus_populaires">
-                            
                             <img class="photo_element_les_plus_populaires" src="img/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="au_coeur_ de_l_eau"/>
                             <div class="description_les_plus_populaires">
                                 <h3>Au coeur de l'eau Chambres d'hôtes</h3>
@@ -132,10 +131,11 @@
                         </a>    
                     </div>
                 </section>     
-                                                           
                 <section id="hebergements_a_marseille">             <!--section 2    Hébergements à Marseille   -->
                     <div class="hebergements_a_marseille">
-                        <div id="titre_hebergements_a_marseille"><h2>Hébergements à Marseille</h2></div>
+                        <div id="titre_hebergements_a_marseille">
+                            <h2>Hébergements à Marseille</h2>
+                        </div>
                         <a href="" class="element_hebergements_a_marseille">
                             <img class="photo_element_hebergements_a_marseille" src="img/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge_la_cannebiere"/>
                             <div class="description_hebergements_a_marseille">
@@ -151,7 +151,6 @@
                             </div>
                         </a> 
                         <a href="" class="element_hebergements_a_marseille">
-                            
                             <img class="photo_element_hebergements_a_marseille" src="img/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hotel_du_port"/>
                             <div class="description_hebergements_a_marseille">
                                 <h3>Hôtel du port</h3>
@@ -180,7 +179,6 @@
                             </div>
                         </a> 
                         <a href="" class="element_hebergements_a_marseille">
-                            
                             <img class="photo_element_hebergements_a_marseille" src="img/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hotel_de_la_mer"/>
                             <div class="description_hebergements_a_marseille">
                                 <h3>Hôtel de la mer</h3>
@@ -222,14 +220,16 @@
                                 </div>
                             </div>
                         </a> 
-                        <a href="" class="afficher_plus"><h3>Afficher plus</h3></a>
+                        <a href="" class="afficher_plus">
+                            <h3>Afficher plus</h3>
+                        </a>
                     </div>   
                 </section>
             </div>
-
             <section class="activites_a_marseille">                 <!--section 3    Activitée à Marseille   -->
-                <div id="titre_activites_a_marseille"><h2>Activités à Marseille</h2></div>
-                    
+                <div id="titre_activites_a_marseille">
+                    <h2>Activités à Marseille</h2>
+                </div>
                 <div class= "bloc_element_activites_a_marseille">
                     <a href="" class="element_activites_a_marseille">
                         <img class="photo_element_activites_a_marseille" src="img/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieuc_port"/>
@@ -262,33 +262,46 @@
                 </div>
             </section>
         </main>
-                                                               
         <footer>                                              <!--Footer  ----------->
             <div id="bloc_footer">
-                <div class="a_propos"><h4>A propos</h4>
+                <nav class="a_propos"><h4>A propos</h4>
                     <ul>
-                        <li><a href="">Fonctionnement du site</a></li>
-                        <li><a href="">Conditions générales de vente</a></li>
-                        <li><a href="">Données et confidentialité</a></li>
+                        <li>
+                            <a href="">Fonctionnement du site</a>
+                        </li>
+                        <li>
+                            <a href="">Conditions générales de vente</a>
+                        </li>
+                        <li>
+                            <a href="">Données et confidentialité</a>
+                        </li>
                     </ul>
-                </div>
-                <div class="nos_hebergements"><h4>Nos hébergements</h4>
+                </nav>
+                <nav class="nos_hebergements">
+                    <h4>Nos hébergements</h4>
                     <ul>
-                        <li><a href="">Charte qualité</a></li>
-                        <li><a href="">Soumettre votre hôtel</a></li>
+                        <li>
+                            <a href="">Charte qualité</a>
+                        </li>
+                        <li>
+                            <a href="">Soumettre votre hôtel</a>
+                        </li>
                     </ul>
-                </div>
-
-                <div class="assistance"><h4>Assistance</h4>
+                </nav>
+                <nav class="assistance">
+                    <h4>Assistance</h4>
                     <ul>
-                        <li><a href="">Centre d'aide</a></li>
-                        <li><a href="">Nous contacter</a></li>
+                        <li>
+                            <a href="">Centre d'aide</a>
+                        </li>
+                        <li>
+                            <a href="">Nous contacter</a>
+                        </li>
                     </ul>
-                </div>
+                </nav>
             </div>
         </footer>
     </div>
-
     <script src="https://kit.fontawesome.com/de2ea486d7.js" crossorigin="anonymous"></script>
 </body>
 </html>
