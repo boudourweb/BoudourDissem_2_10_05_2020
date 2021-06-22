@@ -187,44 +187,32 @@ main p{
   
   /*les filtres de recherche*/
 
-main .nav_filtres{
+  .bloc_filtres{
+    display: flex;
+    flex-direction: column;
+}
+
+.les_filtres{
+    margin: 10px 0px 20px 0px;
     display: flex;
     flex-wrap: wrap;
-    margin: 10px 0px 20px 0px;     
 }
 
-main .nav .li{
-    margin: 10px 10px;
-}
-
-.filtres{
+.filtre{
     
+    padding: 5px 30px 5px 80px;
+    font-family: 'Raleway Bold';
+    font-size: 20px;
+    border: 4px #F2F2F2 solid;
     width: auto;
     height: 70px;
-    border: 4px #F2F2F2 solid;
+    background-color: white;
     border-radius: 60px;
     position: relative;
     display: flex;
     align-items: center;
     margin: 10px 10px;
     cursor: pointer;
-}
-
-.filtres:hover{
-    box-shadow: 0px 0px 10px #0065FC;
-}
-
-.filtres:focus{
-    box-shadow: 0px 0px 10px #0065FC;   
-}
-
-.filtres:active{
-    transform: translate(1px, 1px);
-}
-
-main .li{
-    display: flex;
-    justify-items: center;
 }
 
 .circle-icon {
@@ -239,26 +227,34 @@ main .li{
     left: -4px;
 }
 
-.circle-icon:focus, 
-.circle-icon:hover{
+.les_filtres .fas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filtre:hover {
     box-shadow: 0px 0px 10px #0065FC;
 }
-  
+
+.filtre:focus{
+    box-shadow: 0px 0px 10px #0065FC;   
+}
+
+.filtre:active{
+    transform: translate(1px, 1px);
+}
+
+.filtre:focus .circle-icon, 
+.filtre:hover .circle-icon{
+    box-shadow: 0px 0px 10px #0065FC;
+}
+
 main .fa, 
 main .fas{
     display: flex;
     justify-content: center;
     align-items: center;   
-}
-
-.bloc_filtres span{
-    padding: 0px 20px 0px 80px;
-    font-size: 22px;
-    font-family: 'Raleway Bold';
-}
-
-span:hover{
-    color: #0065FC;
 }
 
 .nombre_logement{
@@ -276,6 +272,7 @@ span:hover{
     min-width: 40px;
     margin-right: 10px;
 }
+
  /*les résultats de recherche*/
 
         /*--------------les plus populaires-------------*/
@@ -580,7 +577,7 @@ footer a{
     }
 
     .search {
-        padding: 20px 0px;
+        padding: 20px 0px 30px 0px;
     }
 
     .searchTerm{
@@ -604,24 +601,17 @@ footer a{
 
     /*les filtres de recherche*/
 
-    .filtres{
-        margin: 5px 5px;
+    .filtre{
         height: 50px;
+        margin: 10px 10px;
+        padding: 0px 20px 0px 60px;
+        font-size: 1rem;
     }
 
     .circle-icon {
         font-size: 1.2rem;
         height: 50px;
         min-width: 50px;
-    }
-
-    main .nav_filtres{
-        margin: 10px 0px 10px 0px;
-    }
-
-    .bloc_filtres span{
-        padding: 0px 20px 0px 60px;
-        font-size: 1rem;
     }
 
     .circle-info {
@@ -899,6 +889,20 @@ footer a{
     
     /*-----les filtres de recherche-----*/
     
+    .bloc_filtres{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+    
+    .filtre{
+        width: auto;
+        height: 38px;
+        font-size: 13px;
+        border: 3px #F2F2F2 solid;
+        margin: 5px 5px 5px 20px;
+        padding: 0px 20px 0px 45px;
+    }  
     .circle-icon {
         font-size: 14px;
         height: 38px;
@@ -912,30 +916,6 @@ footer a{
         box-shadow: 0px 0px 10px #0065FC;  
     }
     
-    .filtres {
-        width: auto;
-        height: 38px;
-        border: 3px #F2F2F2 solid;
-        margin: 5px 5px 5px 20px;
-    }   
-    
-    main .nav_filtres{
-        margin: 10px 0px 16px 10px;
-        display: flex;
-        justify-content: normal;    
-    }
-    
-    .bloc_filtres, main .nav_filtres{
-        display: flex;
-        flex-direction: row;
-        align-items: baseline;
-    }
-    
-    .bloc_filtres span {
-        padding: 0px 20px 0px 40px;
-        font-size: 13px;
-    }    
-
     .circle-info{
         font-size: 8px;
         border: 2px solid #F2F2F2;
@@ -1312,42 +1292,32 @@ footer a{
     
  /*-----les filtres de recherche-----*/
 
-    .circle-icon {
-        font-size: 14px;
-        height: 37px;
-        min-width: 37px;
-        position: absolute;
-        top: -3px;
-        transition: none ;
-    }
-
-    .circle-icon:active, .circle-icon:hover{
-        box-shadow: 0px 0px 10px #0065FC;
-    }
-  
-    .filtres {
-        width: auto;
-        height: 38px;
-        border: 3px #F2F2F2 solid;
-        margin: 0px 5px 0px 20px;
-    }
-
-    main .nav_filtres{
-        margin: 10px 0px 16px 10px;
-        display: flex;
-        justify-content: normal;    
-    }
-    
-    .bloc_filtres, main .nav_filtres{
+    .bloc_filtres{
         display: flex;
         flex-direction: row;
         align-items: baseline;
     }
-
-    .bloc_filtres span {
-        padding: 0px 20px 0px 40px;
+ 
+    .filtre{
+        width: auto;
+        height: 38px;
         font-size: 13px;
-    }    
+        border: 3px #F2F2F2 solid;
+        margin: 5px 5px 5px 20px;
+        padding: 0px 20px 0px 45px;
+    }  
+    .circle-icon {
+        font-size: 14px;
+        height: 38px;
+        min-width: 38px;
+        position: absolute;
+        top: -3px;
+        left: -2px;
+    }
+
+    .circle-icon:active, .circle-icon:hover{
+        box-shadow: 0px 0px 10px #0065FC;  
+    }
 
     .circle-info{
         font-size: 8px;
@@ -1720,44 +1690,33 @@ footer a{
     }
     
  /*-----les filtres de recherche-----*/
+ 
+    .bloc_filtres{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+}
+    .filtre{
+        width: auto;
+        height: 38px;
+        font-size: 13px;
+        border: 3px #F2F2F2 solid;
+        margin: 5px 5px 5px 20px;
+        padding: 0px 20px 0px 45px;
+    }  
     .circle-icon {
         font-size: 14px;
-        height: 37px;
-        min-width: 37px;
+        height: 38px;
+        min-width: 38px;
         position: absolute;
         top: -3px;
-        transition: none ;
+        left: -2px;
     }
 
     .circle-icon:active, .circle-icon:hover{
         box-shadow: 0px 0px 10px #0065FC;
-        transform: none;
-    }
-  
-    .filtres {
-        width: auto;
-        height: 38px;
-        border: 3px #F2F2F2 solid;
-        margin: 0px 5px 0px 20px;
-    }
-
-    main .nav_filtres{
-        margin: 10px 0px 16px 10px;
-        display: flex;
-        justify-content: normal;    
     }
     
-    .bloc_filtres, main .nav_filtres{
-        display: flex;
-        flex-direction: row;
-        align-items: baseline;
-    }
-
-    .bloc_filtres span {
-        padding: 0px 20px 0px 40px;
-        font-size: 13px;
-    }    
-
     .circle-info{
         font-size: 8px;
         border: 2px solid #F2F2F2;
